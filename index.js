@@ -1,12 +1,17 @@
-// TODO: Include packages needed for this application
+// packages and linked utilities needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-// TODO: Create an array of questions for user input
+// questions for user input
 
 inquirer.prompt([
+    {
+        type: 'input',
+        name: 'username',
+        message: 'What is your GitHub username? This is required for license badge.'
+    },
     {
         type: 'input',
         name: 'repo',
@@ -47,6 +52,10 @@ inquirer.prompt([
         message: 'Select a license.',
         name: 'license',
         choices: ['The Unlicense', 'Boost Software License 1.0', 'MIT License', 'Apache License 2.0', 'Mozilla Public License 2.0', 'GNU LGPLv3', 'GNU GPLv3', 'GNU AGPLv3', 'No License'],
+        // validate: function (data) {
+        //     if (data === 'No License')
+        //     return "This application is not licensed at this time.";
+        //}
     },
     {
         type: 'input',
@@ -56,7 +65,7 @@ inquirer.prompt([
 ])
 
 
-    // TODO: Create a function to write README file
+    // writes README file
 
     .then((data) => {
         const readMeContent = generateMarkdown(data);
@@ -66,32 +75,8 @@ inquirer.prompt([
         );
     });
 
-// When user prompted for information about their application repository, 
-// a high-quality, professional README.md is generated with...
-// * title of the project
-// * Description
-// * Table of Contents
-// * Installation
-// * Usage
-// * License
-// * Contributing
-// * Tests
-// * Questions
 
-// When user enters their project title it is displayed as the title of the README.
-
-// When user enters a description, installation instructions, usage information, contribution guidelines, and 
-// test instructions then this information is added to the sections of the README entitled Description, 
-// Installation, Usage, Contributing, and Tests.
-
+//TO-DO:
 // When user chooses a license for their application from a list of options a badge for that license is added near
 //the top of the README and a notice is added to the section of the README entitled License that explains which 
 //license the application is covered under.
-
-// When user enters their GitHub username it is added to the section of the README entitled Questions, with a link
-// to users GitHub profile.
-
-// When user enters their email address it is added to the section of the README entitled Questions, with instructions
-// on how to reach me with additional questions.
-
-// When user clicks on the links in the Table of Contents then they are taken to the corresponding section of the README.
