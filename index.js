@@ -48,14 +48,10 @@ inquirer.prompt([
         name: 'test',
     },
     {
-        type: 'checkbox',
+        type: 'list',
         message: 'Select a license.',
         name: 'license',
-        choices: ['The Unlicense', 'Boost Software License 1.0', 'MIT License', 'Apache License 2.0', 'Mozilla Public License 2.0', 'GNU LGPLv3', 'GNU GPLv3', 'GNU AGPLv3', 'No License'],
-        // validate: function (data) {
-        //     if (data === 'No License')
-        //     return "This application is not licensed at this time.";
-        //}
+        choices: ['TheUnlicense', 'BoostSoftwareLicense1.0', 'MIT', 'ApacheLicense2.0', 'MozillaPublicLicense2.0', 'GNULGPLv3', 'GNUGPLv3', 'GNUAGPLv3', 'none'],
     },
     {
         type: 'input',
@@ -74,9 +70,3 @@ inquirer.prompt([
             err ? console.log(err) : console.log('Huzzah! Your README.md file was successfully generated!')
         );
     });
-
-
-//TO-DO:
-// When user chooses a license for their application from a list of options a badge for that license is added near
-//the top of the README and a notice is added to the section of the README entitled License that explains which 
-//license the application is covered under.

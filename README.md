@@ -1,10 +1,8 @@
-![Boost Software License 1.0]('https://img.shields.io/github/license/:RevyWatson/:readme-generator?color=bright%20green&style=plastic')
-
-
-  # README Generator
+# f
+  ![License](https://img.shields.io/badge/license-MozillaPublicLicense2.0-brightgreen)
   
   ## Description
-  Scooby's epic quest to quit the snacks.
+  f
 
   Table of Contents
   - [Installation](#installation)
@@ -15,21 +13,21 @@
   - [Questions](#questions)
 
   ## Installation
-  Hinge and squeeze.
+  f
 
   ## Usage
-  Don't stop believing.
+  f
   
   ## Credits
-  Yo mama.
+  f
   
-  ## License
-  Boost Software License 1.0
+  ## License 
+    This application is licensed under: MozillaPublicLicense2.0.
   
   ## Tests
-  ...no.
+  f
 
   ## Questions
   Have questions or comments about this application?
-  - Please feel free to email me at: ImGonna@KnockYouOut.com
-  - Or find me on GitHub at: [RevyWatson](https://github.com/RevyWatson)
+  - Please feel free to email me at: f
+  - Or find me on GitHub at: [f](https://github.com/f)

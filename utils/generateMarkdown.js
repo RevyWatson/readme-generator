@@ -1,23 +1,33 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) { }
+// returns a license badge based on which license is passed. if there is no license, return an empty string
+function renderLicenseBadge(license) {
+  if (license !== 'none') {
+    return `![License](https://img.shields.io/badge/license-${license}-brightgreen)`
+  }
+  return "";
+}
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) { }
+// returns the license link. if there is no license, return an empty string
+function renderLicenseLink(license) {
+  if (license !== 'none') {
+    return `- [License](#license)`
+  }
+  return "";
+}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+// returns the license section of README. if there is no license, return an empty string
+function renderLicenseSection(license) {
+  if (license !== 'none') {
+    return `## License 
+    This application is licensed under: ${license}.`
+  }
+  return "";
+}
+
 
 // generates markdown for README
 function generateMarkdown(data) {
-  //The below link doesn't work. it produced the license name and a broken image icon. When loaded to the brower it loads to a 404
-  // ![${data.license}]('https://img.shields.io/github/license/:${data.username}/:${data.repo}?color=bright%20green&style=plastic')
-  return `
-
-
-  # ${data.title}
+  return `# ${data.title}
+  ${renderLicenseBadge(data.license)}
   
   ## Description
   ${data.summary}
@@ -26,7 +36,7 @@ function generateMarkdown(data) {
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
-  - [License](#license)
+  ${renderLicenseLink(data.license)}
   - [Tests](#tests)
   - [Questions](#questions)
 
@@ -39,8 +49,7 @@ function generateMarkdown(data) {
   ## Credits
   ${data.contributions}
   
-  ## License
-  ${data.license}
+  ${renderLicenseSection(data.license)}
   
   ## Tests
   ${data.test}
