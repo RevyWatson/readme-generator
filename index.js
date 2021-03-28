@@ -10,12 +10,12 @@ inquirer.prompt([
     {
         type: 'input',
         name: 'username',
-        message: 'What is your GitHub username? This is required for license badge.'
+        message: 'What is your GitHub username?'
     },
     {
         type: 'input',
         name: 'repo',
-        message: 'What is the name of the GitHub repository for this application? This is required for license badge.'
+        message: 'What is the name of the GitHub repository for this application?'
     },
     {
         type: 'input',
