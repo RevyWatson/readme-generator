@@ -32,7 +32,7 @@ function generateMarkdown(data) {
   ## Description
   ${data.summary}
 
-  Table of Contents
+  ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
