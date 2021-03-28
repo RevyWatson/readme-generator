@@ -38,6 +38,10 @@ This application was designed to allow the user to generate a README.md file fro
 
   Click the link to view the [README Generator](https://youtu.be/oD59NtZGR10) in action!
 
+![Screenshot (80)](https://user-images.githubusercontent.com/76264693/112740082-e73e4580-8f47-11eb-8721-7b6fc0349653.png)
+![Screenshot (83)](https://user-images.githubusercontent.com/76264693/112740084-e86f7280-8f47-11eb-88cb-fa35dfa330ae.png)
+![Screenshot (84)](https://user-images.githubusercontent.com/76264693/112740085-e9a09f80-8f47-11eb-914a-7a3d527f5ce0.png)
+
   ## Credits
 
   No collaborator at this time.
